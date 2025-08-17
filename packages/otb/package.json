@@ -1,0 +1,27 @@
+{
+  "name": "@exevo/otb",
+  "version": "0.0.1",
+  "description": "A .otb parser for OTServer",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Pedro Bernardo <pedrovbernardo@gmail.com>",
+  "keywords": ["OTServer", "parser", "otb", "binary"],
+  "scripts": {
+    "build": "echo 'Build otb package'",
+    "test": "vitest",
+    "lint": "eslint src/otb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedbernardo/exevo-toolkit"
+  },
+  "bugs": {
+    "url": "https://github.com/pedbernardo/exevo-toolkit/issues"
+  },
+  "homepage": "https://github.com/pedbernardo/exevo-toolkit#readme",
+  "dependencies": {
+    "@exevo/types": "workspace:*",
+    "@exevo/utils": "workspace:*"
+  }
+}
