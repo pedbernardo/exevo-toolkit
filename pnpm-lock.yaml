@@ -35,6 +35,12 @@ importers:
 
   packages/dat:
     dependencies:
+      '@exevo/types':
+        specifier: workspace:*
+        version: link:../types
+      '@exevo/utils':
+        specifier: workspace:*
+        version: link:../utils
       ramda:
         specifier: 0.31.3
         version: 0.31.3
