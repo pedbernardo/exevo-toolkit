@@ -3,6 +3,7 @@
  */
 
 /**
+ * Creates a BinaryReader instance for reading binary data from buffers
  * @param {ArrayBuffer|ArrayBufferLike} buffer
  * @returns {BinaryReader}
  */

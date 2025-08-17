@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Core utilities for exevo toolkit",
   "type": "module",
-  "main": "index.js",
+  "main": "index.mjs",
   "license": "MIT",
   "author": "Pedro Bernardo <pedrovbernardo@gmail.com>",
   "keywords": [
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/pedbernardo/exevo-toolkit#readme",
   "files": [
-    "index.js",
+    "index.mjs",
     "src/",
     "README.md"
   ],
