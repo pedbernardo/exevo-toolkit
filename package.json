@@ -45,6 +45,7 @@
     "url": "https://github.com/pedbernardo/exevo-toolkit/issues"
   },
   "homepage": "https://github.com/pedbernardo/exevo-toolkit#readme",
+  "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">= 22.0.0",
     "pnpm": ">= 9.0.0"
