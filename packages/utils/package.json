@@ -1,0 +1,26 @@
+{
+  "name": "@exevo/utils",
+  "version": "0.0.1",
+  "description": "Core utilities for exevo toolkit",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Pedro Bernardo <pedrovbernardo@gmail.com>",
+  "keywords": ["OTServer", "toolkit"],
+  "scripts": {
+    "build": "echo 'Build utils package'",
+    "test": "vitest",
+    "lint": "eslint src/utils"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedbernardo/exevo-toolkit"
+  },
+  "bugs": {
+    "url": "https://github.com/pedbernardo/exevo-toolkit/issues"
+  },
+  "homepage": "https://github.com/pedbernardo/exevo-toolkit#readme",
+  "dependencies": {
+    "@exevo/types": "workspace:*"
+  }
+}

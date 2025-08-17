@@ -1,0 +1,26 @@
+{
+  "name": "@exevo/types",
+  "version": "0.0.1",
+  "description": "Type definitions for exevo toolkit",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "types/index.d.ts",
+  "license": "MIT",
+  "author": "Pedro Bernardo <pedrovbernardo@gmail.com>",
+  "keywords": ["OTServer","types", "typescript", "jsdoc"],
+  "scripts": {
+    "build": "tsc src/index.js src/binary-reader.js --declaration --emitDeclarationOnly --outDir types --allowJs",
+    "dev": "tsc --watch src/index.js src/binary-reader.js --declaration --emitDeclarationOnly --outDir types --allowJs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedbernardo/exevo-toolkit"
+  },
+  "bugs": {
+    "url": "https://github.com/pedbernardo/exevo-toolkit/issues"
+  },
+  "homepage": "https://github.com/pedbernardo/exevo-toolkit#readme",
+  "dependencies": {
+    "typescript": "5.9.2"
+  }
+}
