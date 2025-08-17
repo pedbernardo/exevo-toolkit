@@ -34,6 +34,10 @@ import { snakeCaseToCamelCase } from '@exevo/utils'
 
 /**
  * @typedef {import('@exevo/types').BinaryReader} BinaryReader
+ * @typedef {import('@exevo/types').FlagValue} FlagValue
+ * @typedef {import('@exevo/types').RulesMap} RulesMap
+ * @typedef {import('@exevo/types').MultiRule} MultiRule
+ * @typedef {import('@exevo/types').AdvancedRule} AdvancedRule
  */
 
 /**

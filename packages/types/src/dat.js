@@ -1,5 +1,5 @@
 /**
- * @typedef {Object} DatManager
+ * @typedef {object} DatManager
  * @property {() => boolean} load - Load and parse the DAT file data
  * @property {(id: number) => Thing|undefined} getThing - Get a thing (item/creature/effect/missile) by ID
  * @property {number} signature - Get the DAT file signature
@@ -22,7 +22,7 @@
  */
 
 /**
- * @typedef {Object} DatCounts
+ * @typedef {object} DatCounts
  * @property {number} items - Number of items in the DAT file
  * @property {number} creatures - Number of creatures in the DAT file
  * @property {number} effects - Number of effects in the DAT file
@@ -102,7 +102,7 @@
  */
 
 /**
- * @typedef {Object} RuleEntry
+ * @typedef {object} RuleEntry
  * @property {string} displayName - flag's display name (camelCase)
  * @property {ParserFn} parser - parsing function for the flag
  */
@@ -121,3 +121,16 @@
  * @typedef {SingleRule | MultiRule} AdvancedRule
  * Either a single or multi-value reading rule.
  */
+
+// Export the type for TypeScript
+export const DatManager = undefined
+export const DatProps = undefined
+export const DatCounts = undefined
+export const ThingsMap = undefined
+export const Thing = undefined
+export const ThingLayout = undefined
+export const ThingFlags = undefined
+export const RuleEntry = undefined
+export const SingleRule = undefined
+export const MultiRule = undefined
+export const AdvancedRule = undefined

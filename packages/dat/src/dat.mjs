@@ -5,6 +5,15 @@ import { createFlagsParser } from './dat-flags-parser.mjs'
 import { pipe } from 'ramda'
 
 /**
+ * @typedef {import('@exevo/types').DatManager} DatManager
+ * @typedef {import('@exevo/types').DatProps} DatProps
+ * @typedef {import('@exevo/types').ThingsMap} ThingsMap
+ * @typedef {import('@exevo/types').Thing} Thing
+ * @typedef {import('@exevo/types').ThingFlags} ThingFlags
+ * @typedef {import('@exevo/types').ThingLayout} ThingLayout
+ */
+
+/**
  * A factory function to create a .dat file reader instance.
  * @param {ArrayBuffer|ArrayBufferLike} buffer - ArrayBuffer containing the .dat file data
  * @param {number} version - version number to specify the .dat file version
