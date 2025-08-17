@@ -1,0 +1,41 @@
+/**
+ * @typedef {object} SprManager
+ * @property {() => boolean} load - load and parse the .spr file data
+ * @property {(id: number) => number} address - get the file address of a sprite by id
+ * @property {(id: number) => Sprite|null} getSprite - get a sprite by id with RGBA data
+ * @property {(ids: number[]) => Sprite[]} getSprites - get multiple sprites by their ids
+ * @property {(callback?: function, useCache?: boolean) => SpritesMap} parse - render all sprites with optional progress callback
+ * @property {() => void} clearCache - clear the internal sprite cache
+ * @property {number} count - get the total number of sprites in the file
+ * @property {Map<number, number>} addresses - get all sprite addresses as a Map
+ * @property {number} signature - get the signature of the .spr file
+ * @property {number} version - get the Tibia client version used for this .spr file
+ * @property {boolean} isLoaded - get the loading state of the .spr file
+ */
+
+/**
+ * @typedef {object} SprProps
+ * @property {boolean} isLoaded - whether the .spr file has been loaded
+ * @property {number} version - Tibia client version
+ * @property {number} signature - .spr file signature
+ * @property {number} count - number of sprites in the file
+ * @property {Map<number, number>} addresses - map of sprite id to address (1-based indexing)
+ */
+
+/**
+ * @typedef {object} Sprite
+ * @property {number} id - sprite id
+ * @property {Uint8Array|Uint8ClampedArray} rgba - RGBA pixel data (32x32x4 = 4096 bytes)
+ * @property {number} width - sprite width (always 32)
+ * @property {number} height - sprite height (always 32)
+ */
+
+/**
+ * @typedef {Map<number, Sprite>} SpritesMap
+ */
+
+// Export the type for TypeScript
+export const SprManager = undefined
+export const SprProps = undefined
+export const Sprite = undefined
+export const SpritesMap = undefined

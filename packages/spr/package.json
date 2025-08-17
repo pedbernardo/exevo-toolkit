@@ -1,0 +1,28 @@
+{
+  "name": "@exevo/spr",
+  "version": "0.0.1",
+  "description": "A .spr parser for OTServer",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Pedro Bernardo <pedrovbernardo@gmail.com>",
+  "keywords": ["OTServer", "parser", "spr", "binary"],
+  "scripts": {
+    "build": "echo 'Build spr package'",
+    "test": "vitest",
+    "lint": "eslint src/spr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedbernardo/exevo-toolkit"
+  },
+  "bugs": {
+    "url": "https://github.com/pedbernardo/exevo-toolkit/issues"
+  },
+  "homepage": "https://github.com/pedbernardo/exevo-toolkit#readme",
+  "dependencies": {
+    "@exevo/types": "workspace:*",
+    "@exevo/utils": "workspace:*",
+    "pngjs": "^7.0.0"
+  }
+}

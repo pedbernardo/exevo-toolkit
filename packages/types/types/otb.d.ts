@@ -150,6 +150,7 @@ export type OtbProps = {
      */
     itemCount: number;
 };
+export const OtbProps: any;
 export type OtbItem = {
     /**
      * - Server ID of the item
@@ -176,6 +177,7 @@ export type OtbItem = {
      */
     attributes: OtbItemAttributes;
 };
+export const OtbItem: any;
 export type OtbItemFlags = {
     /**
      * - Cannot be walked through
@@ -282,6 +284,7 @@ export type OtbItemFlags = {
      */
     forceUse?: boolean;
 };
+export const OtbItemFlags: any;
 export type OtbItemAttributes = {
     /**
      * - Item name
@@ -340,6 +343,7 @@ export type OtbItemAttributes = {
      */
     alwaysOnTopOrder?: number;
 };
+export const OtbItemAttributes: any;
 export type OtbItemFlow = {
     /**
      * - The item being parsed
@@ -354,6 +358,7 @@ export type OtbItemFlow = {
      */
     endPos: number;
 };
+export const OtbItemFlow: any;
 /**
  * Enhanced binary reader with OTB-specific escape sequence methods
  */
@@ -367,3 +372,4 @@ export type OtbReader = import("./binary-reader").BinaryReader & {
     peekU8At: (position: number) => number;
     nextSpecialByte: () => number;
 };
+export const OtbReader: any;
