@@ -1,0 +1,52 @@
+{
+  "name": "exevo-toolkit",
+  "version": "0.0.1",
+  "description": "A javascript toolkit for OTServer development",
+  "type": "module",
+  "license": "MIT",
+  "author": "Pedro Bernardo <pedrovbernardo@gmail.com>",
+  "keywords": [
+    "OTServer",
+    "toolkit",
+    "parser",
+    "spritesheet",
+    "binary"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r clean",
+    "dev": "pnpm -r dev",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish"
+  },
+  "lint-staged": {
+    "*.{js,mjs,cjs}": "eslint"
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.29.6",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "eslint": "9.33.0",
+    "husky": "9.1.7",
+    "lint-staged": "16.1.5",
+    "neostandard": "0.12.2",
+    "vitest": "3.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedbernardo/exevo-toolkit"
+  },
+  "bugs": {
+    "url": "https://github.com/pedbernardo/exevo-toolkit/issues"
+  },
+  "homepage": "https://github.com/pedbernardo/exevo-toolkit#readme",
+  "engines": {
+    "node": ">= 22.0.0",
+    "pnpm": ">= 9.0.0"
+  }
+}
