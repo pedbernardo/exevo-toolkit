@@ -20,6 +20,11 @@
     "url": "https://github.com/pedbernardo/exevo-toolkit/issues"
   },
   "homepage": "https://github.com/pedbernardo/exevo-toolkit#readme",
+  "files": [
+    "index.js",
+    "src/",
+    "README.md"
+  ],
   "dependencies": {
     "@exevo/types": "workspace:*"
   }
