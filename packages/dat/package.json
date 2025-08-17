@@ -1,0 +1,33 @@
+{
+  "name": "@exevo/dat",
+  "version": "0.0.1",
+  "description": "A .dat parser for OTServer",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Pedro Bernardo <pedrovbernardo@gmail.com>",
+  "keywords": [
+    "OTServer",
+    "parser",
+    "dat",
+    "binary"
+  ],
+  "scripts": {
+    "build": "echo 'Build dat package'",
+    "test": "vitest",
+    "lint": "eslint src/dat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedbernardo/exevo-toolkit"
+  },
+  "bugs": {
+    "url": "https://github.com/pedbernardo/exevo-toolkit/issues"
+  },
+  "homepage": "https://github.com/pedbernardo/exevo-toolkit#readme",
+  "dependencies": {
+    "@exevo/types": "workspace:*",
+    "@exevo/utils": "workspace:*",
+    "ramda": "0.31.3"
+  }
+}
