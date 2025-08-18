@@ -40,6 +40,7 @@ export function SprManager (buffer, version) {
     clearCache: () => sprites.clear(),
     get count () { return props.count },
     get addresses () { return props.addresses },
+    get sprites () { return sprites },
     get signature () { return props.signature },
     get version () { return version },
     get isLoaded () { return props.isLoaded },
@@ -143,7 +144,7 @@ export function SprManager (buffer, version) {
   function parseSprite (id) {
     const address = props.addresses.get(id)
 
-    if (!address) return null
+    if (address === undefined) return null
 
     // use Uint8ClampedArray for better Canvas compatibility
     // initializes a 32x32x4 RGBA sprite map
@@ -207,7 +208,7 @@ export function SprManager (buffer, version) {
 
   /**
    * Parse all sprites with optional progress callback and caching control
-   * @param {function} [callback] - Optional progress callback (current, total, percent)
+   * @param {(id: number, total: number, percent: number) => void} [callback] - Optional progress callback (current, total, percent)
    * @param {boolean} [useCache=true] - Whether to cache sprites during bulk loading
    * @returns {SpritesMap} Map of all sprites
    */
@@ -218,6 +219,10 @@ export function SprManager (buffer, version) {
       const sprite = useCache ? getSprite(id) : parseSprite(id)
 
       if (sprite) sprites.set(id, sprite)
+
+      if (!sprite) {
+        console.warn(`Sprite id ${id} could not be parsed`)
+      }
 
       if (callback && typeof callback === 'function') {
         const percent = Math.round((id / total) * 100)

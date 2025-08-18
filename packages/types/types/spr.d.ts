@@ -18,7 +18,7 @@ export type SprManager = {
     /**
      * - render all sprites with optional progress callback
      */
-    parse: (callback?: Function, useCache?: boolean) => SpritesMap;
+    parse: (callback?: (id: number, total: number, percent: number) => void, useCache?: boolean) => SpritesMap;
     /**
      * - clear the internal sprite cache
      */
@@ -31,6 +31,10 @@ export type SprManager = {
      * - get all sprite addresses as a Map
      */
     addresses: Map<number, number>;
+    /**
+     * - get all sprites as a Map
+     */
+    sprites: Map<number, Sprite>;
     /**
      * - get the signature of the .spr file
      */
@@ -50,10 +54,11 @@ export type SprManager = {
  * @property {(id: number) => number} address - get the file address of a sprite by id
  * @property {(id: number) => Sprite|null} getSprite - get a sprite by id with RGBA data
  * @property {(ids: number[]) => Sprite[]} getSprites - get multiple sprites by their ids
- * @property {(callback?: function, useCache?: boolean) => SpritesMap} parse - render all sprites with optional progress callback
+ * @property {(callback?: (id: number, total: number, percent: number) => void, useCache?: boolean) => SpritesMap} parse - render all sprites with optional progress callback
  * @property {() => void} clearCache - clear the internal sprite cache
  * @property {number} count - get the total number of sprites in the file
  * @property {Map<number, number>} addresses - get all sprite addresses as a Map
+ * @property {Map<number, Sprite>} sprites - get all sprites as a Map
  * @property {number} signature - get the signature of the .spr file
  * @property {number} version - get the Tibia client version used for this .spr file
  * @property {boolean} isLoaded - get the loading state of the .spr file
