@@ -30,12 +30,8 @@ pids
 # Coverage directory used by tools like istanbul
 coverage
 
-# env files
-.env*
-!.env.example
-
-# playground
-src/playground.mjs
-
 # reference projects
 references
+
+# binary files samples
+data
